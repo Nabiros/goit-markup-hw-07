@@ -1,0 +1,6 @@
+
+# TernJS port file
+.tern-port
+
+# OS junk
+.DS_Store 
