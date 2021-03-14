@@ -1,21 +1,4 @@
-:root {
-  --black-text-color: #000000;
-  --nav-color: #212121;
-  --decoration-color: #2196f3;
-  --bg-submit-active: #188ce8;
-  --appoint-bg-op90: rgba(33, 150, 243, 0.9);
-  --color-white: #ffffff;
-  --primary-text-color: #757575;
-  --hero-gradient: rgba(47, 48, 58, 0.4);
-  --footer-address-color-op60: rgba(255, 255, 255, 0.6);
-  --join-icon-bg-op10: rgba(255, 255, 255, 0.1);
-  --thumb-text-op80: rgba(47, 48, 58, 0.8);
-  --bg-color: #2f303a;
-  --border-color: #ececec;
-  --btn-bg-color: #f5f4fa;
-  --social-color: #afb1b8;
-  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+@import 'utils/variables';
 
 .container.logo,
 .header-nav,
@@ -32,6 +15,12 @@ h4 {
   margin: 0;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 img {
   display: block;
 }
@@ -45,8 +34,8 @@ body {
 a {
   text-decoration: none;
   background-color: transparent;
-  transition: color var(--timing-function),
-    background-color var(--timing-function);
+  transition: color $timing-function
+    background-color $timing-function;
 }
 
 button {
@@ -64,7 +53,7 @@ address {
 .nav-li.std,
 .nav-li.prf,
 .nav-li.cnt {
-  color: var(--decoration-color);
+  color: $decoration-color;
 }
 
 .container {
@@ -85,8 +74,8 @@ address {
   font-size: 16px;
   line-height: 1.25;
   text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--decoration-color);
+  color: $color-white;
+  background-color: $decoration-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -97,7 +86,7 @@ address {
 }
 
 .header {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $border-color;
 }
 
 .header-logo {
@@ -112,7 +101,7 @@ address {
 }
 
 .web-logo {
-  color: #2196f3;
+  color: $decoration-color;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -120,7 +109,7 @@ address {
 }
 
 .studio-logo {
-  color: #000000;
+  color: $black-text-color;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -136,7 +125,7 @@ address {
 }
 
 .nav-li {
-  color: var(--nav-color);
+  color: $nav-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -158,7 +147,7 @@ address {
   border-radius: 4px;
   width: 100%;
   height: 4px;
-  background-color: var(--decoration-color);
+  background-color: $decoration-color;
 }
 
 .communication-list {
@@ -171,7 +160,7 @@ address {
 .communication {
   display: flex;
   align-items: center;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -192,7 +181,7 @@ address {
 .nav-li:focus,
 .communication:hover,
 .communication:focus {
-  color: var(--decoration-color);
+  color: $decoration-color;
 }
 
 .hero {
@@ -200,11 +189,11 @@ address {
   text-align: center;
   background-image: linear-gradient(
       to right,
-      var(--hero-gradient),
-      var(--hero-gradient)
+      $hero-gradient,
+      $hero-gradient
     ),
     url(../images/bg.jpg);
-  background-color: #2f303a;
+  background-color: $bg-color;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -222,7 +211,7 @@ address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity var(--timing-function);
+  transition: opacity $timing-function;
 }
 
 .backdrop.is-hidden {
@@ -248,11 +237,11 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  background-color: var(--color-white);
-  color: var(--nav-color);
+  background-color: $color-white;
+  color: $nav-color;
 
   transform: translate(-50%, -50%);
-  transition: transform var(--timing-function);
+  transition: transform $timing-function;
 }
 
 .modal p {
@@ -280,7 +269,7 @@ address {
 
 .form-input:focus,
 .form-input:hover {
-  border: 1px solid var(--decoration-color);
+  border: 1px solid $decoration-color;
 }
 
 .form-icon {
@@ -289,12 +278,12 @@ address {
   left: 15px;
   transform: translateY(-50%);
   fill: currentColor;
-  transition: fill var(--timing-function);
+  transition: fill $timing-function;
 }
 
 .form-input:focus + .form-icon,
 .form-input:hover + .form-icon {
-  fill: var(--decoration-color);
+  fill: $decoration-color;
 }
 
 .form-input {
@@ -304,7 +293,7 @@ address {
   height: 40px;
   width: 100%;
   outline: none;
-  transition: border var(--timing-function);
+  transition: border $timing-function;
 }
 
 .form-group label {
@@ -315,7 +304,7 @@ address {
 
   margin-right: auto;
   margin-bottom: 4px;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .form-group textarea {
@@ -356,7 +345,7 @@ address {
 .check-icon {
   width: 16px;
   height: 15px;
-  border: 2px solid var(--nav-color);
+  border: 2px solid $nav-color;
   border-radius: 1px;
   margin-right: 7px;
 }
@@ -368,7 +357,7 @@ address {
 .form-text {
   font-size: 14px;
   line-height: 1.71px;
-  color: var(--nav-color);
+  color: $nav-color;
 }
 
 .form-link {
@@ -376,7 +365,7 @@ address {
   font-size: 14px;
   line-height: 1.71px;
   text-decoration: underline;
-  color: var(--decoration-color);
+  color: $decoration-color;
 }
 
 .submit-button {
@@ -394,20 +383,20 @@ address {
   margin: 0 auto;
   padding: 0;
 
-  color: var(--color-white);
-  background-color: var(--decoration-color);
+  color: $color-white;
+  background-color: $decoration-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  transition: background-color var(--timing-function);
+  transition: background-color $timing-function;
 }
 
 .submit-button:hover {
-  background-color: var(--bg-submit-active);
+  background-color: $bg-submit-active;
 }
 
 .main-sections-text {
-  color: #ffffff;
+  color: $color-white;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
@@ -420,8 +409,8 @@ address {
   font-weight: 900;
   line-height: 1.8;
   margin: 0 auto;
-  transition: color var(--timing-function),
-    background-color var(--timing-function);
+  transition: color $timing-function,
+    background-color $timing-function;
 }
 
 .main-button-close {
@@ -431,8 +420,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--black-text-color);
-  background-color: var(--color-white);
+  color: $black-text-color;
+  background-color: $color-white;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -448,7 +437,7 @@ address {
 
 .main-button-close:hover,
 .main-button-close:focus {
-  color: var(--decoration-color);
+  color: $decoration-color;
   cursor: pointer;
 }
 
@@ -480,12 +469,12 @@ address {
 .apps-icon-cont {
   padding: 25px 100px;
   margin-bottom: 30px;
-  background-color: var(--btn-bg-color);
-  fill: var(--nav-color);
+  background-color: $btn-bg-color;
+  fill: $nav-color;
 }
 
 .apps-title {
-  color: var(--nav-color);
+  color: $nav-color;
   display: flex;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -495,13 +484,13 @@ address {
 }
 
 .qualities {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 14px;
   line-height: 1.7;
 }
 
 .are-we-doing {
-  color: var(--nav-color);
+  color: $nav-color;
   display: flex;
   font-weight: 700;
   font-size: 36px;
@@ -529,7 +518,7 @@ address {
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: $color-white;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -537,13 +526,13 @@ address {
   bottom: 0;
   width: 100%;
   height: 70px;
-  background-color: var(--thumb-text-op80);
+  background-color: $thumb-text-op80;
   padding: 27px 0;
 }
 
 .team-title {
   display: flex;
-  color: var(--nav-color);
+  color: $nav-color;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.6;
@@ -560,7 +549,7 @@ address {
 }
 
 .team-section {
-  background-color: var(--btn-bg-color);
+  background-color: $btn-bg-color;
 }
 
 .cards {
@@ -568,7 +557,7 @@ address {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--color-white);
+  background-color: $color-white;
 }
 
 .cards-img {
@@ -576,7 +565,7 @@ address {
 }
 
 .name-person {
-  color: var(--nav-color);
+  color: $nav-color;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -584,7 +573,7 @@ address {
 }
 
 .person-poition {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
@@ -600,7 +589,7 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--social-color);
+  color: $social-color;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -614,12 +603,12 @@ address {
 
 .soc-site:hover,
 .soc-site:focus {
-  color: var(--color-white);
-  background-color: var(--decoration-color);
+  color: $color-white;
+  background-color: $decoration-color;
 }
 
 .clients {
-  color: var(--decoration-color);
+  color: $decoration-color;
   margin: 0;
   padding: 0;
   display: flex;
@@ -627,7 +616,7 @@ address {
 }
 
 .client {
-  color: var(--social-color);
+  color: $social-color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -643,11 +632,11 @@ address {
 
 .client:hover,
 .client:focus {
-  color: var(--decoration-color);
+  color: $decoration-color;
 }
 
 .footer {
-  background-color: var(--bg-color);
+  background-color: $bg-color;
   padding: 60px 0;
   margin: 0;
 }
@@ -663,7 +652,7 @@ address {
 }
 
 .footer .studio-logo-footer {
-  color: var(--color-white);
+  color: $color-white;
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
@@ -675,7 +664,7 @@ address {
 }
 
 .studio-logo-footer {
-  color: var(--color-white);
+  color: $color-white;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.19;
@@ -683,7 +672,7 @@ address {
 }
 
 .communication-footer {
-  color: var(--footer-address-color-op60);
+  color: $footer-address-color-op60;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -695,7 +684,7 @@ address {
 }
 
 .addresses {
-  color: var(--color-white);
+  color: $color-white;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -716,7 +705,7 @@ address {
   font-size: 14px;
   line-height: 1.7;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: $color-white;
   margin-bottom: 20px;
 }
 
@@ -731,8 +720,8 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-white);
-  background-color: var(--join-icon-bg-op10);
+  color: $color-white;
+  background-color: $join-icon-bg-op10;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -748,7 +737,7 @@ address {
 
 .soc-site-join:hover,
 .soc-site-join:focus {
-  background-color: var(--decoration-color);
+  background-color: $decoration-color;
 }
 
 .subscribe {
@@ -765,7 +754,7 @@ address {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  color: var(--color-white);
+  color: $color-white;
   background-color: inherit;
 }
 
@@ -787,8 +776,8 @@ address {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: var(--color-white);
-  background-color: var(--decoration-color);
+  color: $color-white;
+  background-color: $decoration-color;
 }
 
 /* Portfolio */
@@ -803,8 +792,8 @@ address {
 }
 
 .filtress-button {
-  color: var(--nav-color);
-  background-color: var(--btn-bg-color);
+  color: $nav-color;
+  background-color: $btn-bg-color;
   font-family: inherit;
   display: flex;
   border: none;
@@ -814,14 +803,14 @@ address {
   padding: 6px 22px;
   border-radius: 4px;
   justify-content: space-between;
-  transition: color var(--timing-function),
-    background-color var(--timing-function);
+  transition: color $timing-function,
+    background-color $timing-function;
 }
 
 .filtress-button:focus,
 .filtress-button:hover {
-  color: var(--color-white);
-  background-color: var(--decoration-color);
+  color: $color-white;
+  background-color: $decoration-color;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
@@ -846,7 +835,7 @@ address {
 }
 
 .cards-prtf {
-  transition: box-shadow var(--timing-function);
+  transition: box-shadow $timing-function;
   overflow: hidden;
 }
 
@@ -866,11 +855,11 @@ address {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--appoint-bg-op90);
+  background-color: $appoint-bg-op90;
   opacity: 0;
   padding: 63px 24px;
   transform: translateY(100%);
-  transition: transform var(--timing-function), opacity var(--timing-function);
+  transition: transform $timing-function, opacity $timing-function;
 }
 
 .cards-prtf:hover .projects-overlay,
@@ -880,7 +869,7 @@ address {
 }
 
 .overlay-txt {
-  color: var(--color-white);
+  color: $color-white;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -892,12 +881,12 @@ address {
 
 .cont-appoint {
   padding: 20px 24px;
-  border: 1px solid var(--border-color);
+  border: 1px solid $border-color;
   border-top: none;
 }
 
 .appoint {
-  color: var(--nav-color);
+  color: $nav-color;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -905,7 +894,7 @@ address {
 }
 
 .appoint-resurses {
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   font-size: 16px;
   line-height: 1.8;
   margin: 0;
