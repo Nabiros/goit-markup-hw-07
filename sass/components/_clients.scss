@@ -1,0 +1,27 @@
+.clients {
+  color: $decoration-color;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.client {
+  color: $social-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid;
+  border-radius: 4px;
+
+  &:focus,
+  &:hover {
+    color: $decoration-color;
+  }
+}
+
+.clients-icon {
+  fill: currentColor;
+}

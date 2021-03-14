@@ -1,0 +1,40 @@
+.are-we-doing {
+  color: $nav-color;
+  display: flex;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.we-doing-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.project-thumb {
+  position: relative;
+  display: flex;
+  z-index: -1;
+}
+
+.duing-txt {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: $thumb-text-op80;
+  padding: 27px 0;
+}

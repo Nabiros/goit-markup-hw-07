@@ -1,0 +1,116 @@
+.filtress {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 16px;
+  width: 611px;
+}
+
+.filtress-button {
+  color: $nav-color;
+  background-color: $btn-bg-color;
+  font-family: inherit;
+  display: flex;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 6px 22px;
+  border-radius: 4px;
+  justify-content: space-between;
+  transition: color $timing-function,
+    background-color $timing-function;
+    
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background-color: $decoration-color;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.cont-card {
+  margin: 0;
+  margin-top: 34px;
+  padding: 0;
+}
+
+.prtf-card-set {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.prtf-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 30px 0 0 30px;
+}
+
+.cards-prtf {
+  transition: box-shadow $timing-function;
+  overflow: hidden;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:focus .projects-overlay,
+  &:hover .projects-overlay {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.app-thumb {
+  position: relative;
+}
+
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $appoint-bg-op90;
+  opacity: 0;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform $timing-function, opacity $timing-function;
+}
+
+.overlay-txt {
+  color: $color-white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.app-thumb-txt {
+  padding: 63px 24px;
+}
+
+.cont-appoint {
+  padding: 20px 24px;
+  border: 1px solid $border-color;
+  border-top: none;
+}
+
+.appoint {
+  color: $nav-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin: 0;
+}
+
+.appoint-resurses {
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 0;
+}
