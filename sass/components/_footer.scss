@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-.footer__logo--web {
+.nav__logo-web {
   color: $decoration-color;
   font-family: Raleway;
   font-size: 26px;
@@ -22,7 +22,7 @@
   font-weight: 700;
 }
 
-.footer__logo--studio {
+.nav__logo-studio--white {
   color: $color-white;
   font-size: 26px;
   line-height: 1.19;
@@ -80,14 +80,14 @@
   margin-bottom: 20px;
 }
 
-.socials--join {
+.socials-footer {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
-.socials__link--join {
+.socials-footer__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,14 +100,14 @@
   padding: 0;
 }
 
-.socials__icon--join {
+.socials-footer__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.socials__link--join:hover,
-.socials__link--join:focus {
+.socials-footer__link:hover,
+.socials-footer__link:focus {
   background-color: $decoration-color;
 }
 

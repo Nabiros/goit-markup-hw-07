@@ -1,11 +1,7 @@
 .hero {
   padding: 200px 0;
   text-align: center;
-  background-image: linear-gradient(
-      to right,
-      $hero-gradient,
-      $hero-gradient
-    ),
+  background-image: linear-gradient(to right, $hero-gradient, $hero-gradient),
     url(../images/bg.jpg);
   background-color: $bg-color;
   background-repeat: no-repeat;
@@ -28,12 +24,12 @@
   transition: opacity $timing-function;
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
   transform: scale(4);
 }
 
@@ -51,6 +47,5 @@
   font-weight: 900;
   line-height: 1.8;
   margin: 0 auto;
-  transition: color $timing-function,
-    background-color $timing-function;
+  transition: color $timing-function, background-color $timing-function;
 }

@@ -481,7 +481,7 @@ header {
   padding: 24px 94px 25px 0;
 }
 
-.nav__logo--web {
+.nav__logo-web {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
@@ -489,7 +489,7 @@ header {
   font-weight: 700;
 }
 
-.nav__logo--studio {
+.nav__logo-studio {
   color: #000000;
   font-family: Raleway;
   font-size: 26px;
@@ -538,6 +538,7 @@ header {
   border-radius: 4px;
   width: 100%;
   height: 4px;
+  color: #2196f3;
   background-color: #2196f3;
 }
 
@@ -608,12 +609,12 @@ header {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
   -webkit-transform: scale(4);
           transform: scale(4);
 }
@@ -659,7 +660,7 @@ header {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button--close {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -681,7 +682,7 @@ header {
   padding: 0;
 }
 
-.button--close:hover, .button--close:focus {
+.modal__button-close:hover, .modal__button-close:focus {
   color: #2196f3;
   cursor: pointer;
 }
@@ -1231,7 +1232,7 @@ header {
   padding: 0;
 }
 
-.footer__logo--web {
+.nav__logo-web {
   color: #2196f3;
   font-family: Raleway;
   font-size: 26px;
@@ -1239,7 +1240,7 @@ header {
   font-weight: 700;
 }
 
-.footer__logo--studio {
+.nav__logo-studio--white {
   color: #ffffff;
   font-size: 26px;
   line-height: 1.19;
@@ -1307,7 +1308,7 @@ header {
   margin-bottom: 20px;
 }
 
-.socials--join {
+.socials-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1318,7 +1319,7 @@ header {
   padding: 0;
 }
 
-.socials__link--join {
+.socials-footer__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,14 +1338,14 @@ header {
   padding: 0;
 }
 
-.socials__icon--join {
+.socials-footer__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.socials__link--join:hover,
-.socials__link--join:focus {
+.socials-footer__link:hover,
+.socials-footer__link:focus {
   background-color: #2196f3;
 }
 
