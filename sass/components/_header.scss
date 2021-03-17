@@ -1,15 +1,19 @@
-.header-logo {
+.header {
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
+.nav {
+  display: flex;
+}
+
+.nav__logo {
   display: flex;
   align-items: center;
   padding: 24px 94px 25px 0;
 }
 
-.web-logo {
+.nav__logo--web {
   color: $decoration-color;
   font-family: Raleway;
   font-size: 26px;
@@ -17,7 +21,7 @@
   font-weight: 700;
 }
 
-.studio-logo {
+.nav__logo--studio {
   color: $black-text-color;
   font-family: Raleway;
   font-size: 26px;
@@ -25,7 +29,8 @@
   font-weight: 700;
 }
 
-.nav-list {
+.nav-menu {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 294px;
@@ -33,7 +38,7 @@
   padding: 0;
 }
 
-.nav-li {
+.nav-menu__link {
   color: $nav-color;
   font-weight: 500;
   font-size: 14px;
@@ -46,13 +51,12 @@
   }
 }
 
-.menu-item {
+.nav-menu__item {
   position: relative;
   padding: 32px 0;
 }
 
-.std::after,
-.prf::after {
+.nav-menu__link--active-page::after {
   content: '';
   display: block;
   position: absolute;
@@ -64,14 +68,19 @@
   background-color: $decoration-color;
 }
 
-.communication-list {
+.communication {
+  display: flex;
   padding: 0;
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
 }
 
-.communication {
+.tel {
+  margin-left: 30px;
+}
+
+.communication__link {
   display: flex;
   align-items: center;
   color: $primary-text-color;
@@ -85,11 +94,7 @@
   }
 }
 
-.tell {
-  margin-left: 30px;
-}
-
-.tool {
+.communication__icon {
   fill: currentColor;
   margin-right: 10px;
 }

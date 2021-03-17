@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 34px;
   padding: 0;
   padding-bottom: 16px;
   width: 611px;
 }
 
-.filtress-button {
+.filtress__button {
   color: $nav-color;
   background-color: $btn-bg-color;
   font-family: inherit;
@@ -19,9 +20,8 @@
   padding: 6px 22px;
   border-radius: 4px;
   justify-content: space-between;
-  transition: color $timing-function,
-    background-color $timing-function;
-    
+  transition: color $timing-function, background-color $timing-function;
+
   &:hover,
   &:focus {
     color: $color-white;
@@ -30,13 +30,7 @@
   }
 }
 
-.cont-card {
-  margin: 0;
-  margin-top: 34px;
-  padding: 0;
-}
-
-.prtf-card-set {
+.card-set {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -45,18 +39,19 @@
   margin-left: -30px;
 }
 
-.prtf-item {
+.card-set__item {
   flex-basis: calc(100% / 3 - 30px);
   margin: 30px 0 0 30px;
 }
 
-.cards-prtf {
+.card-set__card {
   transition: box-shadow $timing-function;
   overflow: hidden;
 
   &:focus,
   &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
   &:focus .projects-overlay,
@@ -66,7 +61,7 @@
   }
 }
 
-.app-thumb {
+.card-set__thumb {
   position: relative;
 }
 
@@ -83,24 +78,20 @@
   transition: transform $timing-function, opacity $timing-function;
 }
 
-.overlay-txt {
+.projects-overlay__txt {
   color: $color-white;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
 }
 
-.app-thumb-txt {
-  padding: 63px 24px;
-}
-
-.cont-appoint {
+.appoint {
   padding: 20px 24px;
   border: 1px solid $border-color;
   border-top: none;
 }
 
-.appoint {
+.appoint__name {
   color: $nav-color;
   font-weight: 700;
   font-size: 18px;
@@ -108,7 +99,7 @@
   margin: 0;
 }
 
-.appoint-resurses {
+.appoint__resurse {
   color: $primary-text-color;
   font-size: 16px;
   line-height: 1.8;

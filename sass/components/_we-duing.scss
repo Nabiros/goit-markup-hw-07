@@ -1,4 +1,4 @@
-.are-we-doing {
+.specials {
   color: $nav-color;
   display: flex;
   font-weight: 700;
@@ -10,20 +10,20 @@
   padding: 0;
 }
 
-.we-doing-list {
+.project {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
 }
 
-.project-thumb {
+.project__thumb {
   position: relative;
   display: flex;
   z-index: -1;
 }
 
-.duing-txt {
+.project__label {
   position: absolute;
   text-align: center;
   text-transform: uppercase;

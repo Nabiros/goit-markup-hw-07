@@ -1,15 +1,17 @@
-.team-list {
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $btn-bg-color;
+}
+
+.person {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin: 0;
 }
 
-.team-section {
-  background-color: $btn-bg-color;
-}
-
-.cards {
+.person__card {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -17,11 +19,11 @@
   background-color: $color-white;
 }
 
-.cards-img {
+.person__img {
   margin-bottom: 30px;
 }
 
-.name-person {
+.person__name {
   color: $nav-color;
   font-weight: 500;
   font-size: 16px;
@@ -29,7 +31,7 @@
   margin-bottom: 10px;
 }
 
-.person-poition {
+.person__poition {
   color: $primary-text-color;
   font-size: 16px;
   line-height: 1.18;
@@ -42,7 +44,7 @@
   padding: 16px 32px 30px;
 }
 
-.soc-site {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +60,7 @@
   }
 }
 
-.soc-icon {
+.socials__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;

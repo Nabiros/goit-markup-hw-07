@@ -4,24 +4,32 @@
   margin: 0;
 }
 
-.footer-all {
+.footer__block {
   display: flex;
   align-items: baseline;
 }
 
-.footer-cont {
+.footer__contacts {
   margin: 0;
   padding: 0;
 }
 
-.footer .studio-logo-footer {
+.footer__logo--web {
+  color: $decoration-color;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+}
+
+.footer__logo--studio {
   color: $color-white;
   font-size: 26px;
   line-height: 1.19;
   font-weight: 700;
 }
 
-.logo-footer {
+.footer__logo {
   display: flex;
   margin-bottom: 20px;
 }
@@ -34,20 +42,20 @@
   font-weight: 700;
 }
 
-.communication-footer {
-  color: $footer-address-color-op60;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
 .address {
   display: flex;
   flex-direction: column;
   align-content: space-between;
 }
 
-.addresses {
+.address__link {
   color: $color-white;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.address__communication {
+  color: $footer-address-color-op60;
   font-size: 14px;
   line-height: 1.7;
 }
@@ -63,7 +71,7 @@
   margin-left: 70px;
 }
 
-.join-text {
+.join__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
@@ -72,14 +80,14 @@
   margin-bottom: 20px;
 }
 
-.socials-join {
+.socials--join {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
-.soc-site-join {
+.socials__link--join {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,14 +100,14 @@
   padding: 0;
 }
 
-.soc-icon-join {
+.socials__icon--join {
   width: 20px;
   height: 20px;
   fill: currentColor;
 }
 
-.soc-site-join:hover,
-.soc-site-join:focus {
+.socials__link--join:hover,
+.socials__link--join:focus {
   background-color: $decoration-color;
 }
 
@@ -107,11 +115,11 @@
   margin-left: auto;
 }
 
-.form-subscribe {
+.subscribe__form {
   display: flex;
 }
 
-.subscribe-input {
+.subscribe__input {
   padding: 15px;
   padding-left: 16px;
   width: 358px;
@@ -121,12 +129,12 @@
   background-color: inherit;
 }
 
-.sub-submit {
+.subscribe__submit {
   width: 200px;
   margin-left: 12px;
 }
 
-.sub-submit .subscribe-button {
+.subscribe__button {
   display: flex;
   align-items: center;
   justify-content: space-between;
