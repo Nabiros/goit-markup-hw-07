@@ -98,17 +98,17 @@
   border-radius: 50%;
   margin: 0;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    background-color: $decoration-color;
+  }
 }
 
 .socials-footer__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.socials-footer__link:hover,
-.socials-footer__link:focus {
-  background-color: $decoration-color;
 }
 
 .subscribe {

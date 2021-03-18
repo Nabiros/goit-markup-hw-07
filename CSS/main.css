@@ -897,7 +897,7 @@ header {
   fill: #212121;
 }
 
-.apps__tittle {
+.apps__title {
   color: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1338,15 +1338,14 @@ header {
   padding: 0;
 }
 
+.socials-footer__link:hover, .socials-footer__link:focus {
+  background-color: #2196f3;
+}
+
 .socials-footer__icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
-}
-
-.socials-footer__link:hover,
-.socials-footer__link:focus {
-  background-color: #2196f3;
 }
 
 .subscribe {
